@@ -18,7 +18,7 @@ class WeatherCog:
     @commands.guild_only()
     async def temp(self, ctx, location):
         try:
-            api_key = "d620ff02cfcd868de691afe70bb9902a"
+            api_key = ""
             owm = pyowm.OWM(api_key)
             observation = owm.weather_at_place(location)
             w = observation.get_weather()
@@ -30,7 +30,7 @@ class WeatherCog:
     @commands.guild_only()
     async def humidity(self, ctx, location):
         try:
-            api_key = "d620ff02cfcd868de691afe70bb9902a"
+            api_key = ""
             owm = pyowm.OWM(api_key)
             observation = owm.weather_at_place(location)
             w = observation.get_weather()
