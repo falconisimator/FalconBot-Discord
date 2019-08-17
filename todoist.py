@@ -17,7 +17,7 @@ class TodoistCog:
                 aliases=['todo'])
     @commands.guild_only()
     async def todoist_test(self,ctx):
-        APIkey = 'a24643c99aded486b13eaa0d671fe7686dbd3e19'
+        APIkey = ''
         try:
             api = todoist.TodoistAPI(APIkey)
             api.sync()
